@@ -1,0 +1,66 @@
+<!-- advanced string concept contain the string which re-create new string from original string -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //length() :  This length method is used to find the length of string
+        let name = "Shaaz";
+        document.write(name.length)  
+
+        document.write("<br>")
+
+        // at() : this at method gives the position of character present at mentioned number
+        let lname = "Mukadam";
+        document.write(lname.at(1))   
+
+        // for using the string method we just call the var name + .(dot) methods name and parameter if required
+        document.write("<br>")
+
+        
+        let sur = "Mukadam";
+        document.write(sur[2]);
+        document.write(sur[2]);
+        document.write("<br>")
+
+        //slice() : Slice methods extract a part of sting and return new extracted part it takes 2 parameters start position and end position
+        let text = "Apple, Banana, Kiwi";
+        document.write(text.slice(7,19));
+        document.write("<br>");
+
+        // if we will omit the second paramter then it will take till last element
+        let text1 = "Banana, Apple, chickoo";
+        document.write(text.slice(10));
+        document.write("<br>");
+
+        // toLowerCase() : This method converts all the string content in lower / small letters
+        let text2 = "Banana, Apple, chickoo";
+        document.write(text.toLowerCase());  // all will be print in lower letter
+        document.write("<br>");
+
+        //toUpperCase() : This method converts all the string content in upper case
+        let names = "Shams";
+        document.write(names.toUpperCase());
+        document.write("<br>");
+
+        //trim() : this methods basically remoces all white space from text.
+        let text4 = "      Hello World!      ";
+        document.write(text4.trim());
+        document.write("<br>");
+
+        //repeat() : This repeat methods is used to repeat the string
+        let name3 ="Abdul";
+        document.write(name3.repeat(4));
+        document.write("<br>");
+
+        //replace() : this replace methods is used to replace the content inside the string
+        let name5 = "hayya";
+        document.write(name5.replace("thayyaa"));
+        document.write("<br>");
+    </script>
+</body>
+</html>

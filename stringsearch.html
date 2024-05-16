@@ -1,0 +1,30 @@
+<!-- string search is used to search the string. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //indexOf() : this method return the index position of fist occurence of string , or it return -1 if string is not present.
+        let sentence = "Shaaz is a good boy";
+        document.write(sentence.indexOf("is"));
+        document.write("<br>");
+
+        //search() : This method is same as indexOf() method
+        let sentence1 = "Shaaz is a good boy";
+        document.write(sentence1.search("is"));
+        document.write("<br>");
+
+        //The indexOf methods and search() methods both are same
+        //match
+        let sentence2 = "Shaaz is a good boy";
+        document.write(sentence1.match("aaz"));
+        document.write("<br>");
+
+
+    </script>
+</body>
+</html>

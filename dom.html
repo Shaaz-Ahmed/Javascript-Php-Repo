@@ -1,0 +1,48 @@
+<!-- dom stands for document object model.
+using dome javascript craete web page dynamic
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+ -->
+
+ <!-- html doam are action you can perform to change html elements. html dom properties that are values that can change or set html element.
+ A property is a value that you can get or set (like changing the content of an HTML element).
+ A method is an action you can do (like add or deleting an HTML element).
+The most easiest way to access html element is using id 
+The easiet way to get the content is innerHTML. The innerHTML is used to getting or changing or replacing the content of html
+-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = 'Hello World'; //In the example above, getElementById is a method, while innerHTML is a property.
+        
+        // // Types of finding the html element. 
+        // We can target the html element using this three methods. id , tagname , classname  you can get elemnt using this 
+        //  1. document.getElementById() : find the element by id 
+        //  2. document.getElementsByTagName() : find the elemnt by tag name
+        //  3. document.getElementsByClassName() : find the element by class name
+
+        // changing html elements 
+        // 1. element.innerHTML = new html content 
+        // 2. document.getElementsByTagName(name)	Find elements by tag name
+        // 3. document.getElementsByClassName(name)	Find elements by class name
+
+       //  in dom we will also do get and set . we can add new html element or else you can delete html element using js. 
+
+        
+   </script>
+ </body>
+ </html>
+

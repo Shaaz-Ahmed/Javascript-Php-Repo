@@ -1,0 +1,33 @@
+<!-- If js code want to interact with html code then it is handeled by events.
+Event is a part of document object model. event is a part of html. 
+Using event we can trigerred javascript code.  (html & what to perform using js)
+when pages load is also called an event
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Keep smiling , keep loving  & keep growing</h3>
+    <button onclick="myfun()">click me - onclcik</button>
+    <button onmousedown="myfun1()">click me - onmousedown</button>
+    <script>
+        //onclick event : this event will perform action when we click on the element
+        function myfun() {
+            document.body.style.background = '#3b5999';
+            alert("Hello")
+
+            //onmousedown : This event will peroform action when you take mouse out from the elemnt which u had written code
+            function myfun1() {
+                document.body.style.background = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- In this fashion events will be aplicable for all  -->

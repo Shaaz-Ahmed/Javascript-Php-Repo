@@ -1,0 +1,23 @@
+ <!-- A conform box is  used to take conformation  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>COnform Box </title>
+ </head>
+ <body>
+      <script>
+         var userconform = confirm ("Do you want to visit our website ?");
+         if(userconform == true) {
+             window.open("https://www.geeksforgeeks.org/javascript-dialogue-boxes/");
+             return true;
+         }
+         else{
+             document.write("User doesnt want to visit the page");
+             return false;
+         }
+      </script>
+ </body>
+ </html>

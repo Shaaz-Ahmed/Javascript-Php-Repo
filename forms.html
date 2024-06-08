@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit= "return myfun()"> <!--This return is mandetory and function name-->
+
+        UserName: <input type="text" name="" id="user_name" value="">
+        <span id="Message"></span>
+        <br> <br>
+        <input type="submit" name="" id="" value="Submit">
+    </form>
+
+    <script>
+        function myfun() {
+        
+        var a = document.getElementById("user_name"). value;
+         
+        if(a==""){
+            document.getElementById("Message").innerHTML = "Please full the username";
+            return false;
+        }
+        if(a.length<3){
+            document.getElementById("Message").innerHTML = "There should be minimun 3 character";
+            return false;
+        }
+    }
+    </script>
+</body>
+</html>

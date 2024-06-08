@@ -1,0 +1,51 @@
+<!-- Phone number validation in java script 
+we have to use isNaN function in js to validate functions  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return myFun()">
+        Mobile Number : <input type="text" name="" id="phone" value="">
+        <span id="message1"></span>
+        <!-- This span tag will print the message if the user enter wrong format -->
+        <br><br>
+        <input type="submit" name="" id="submit">
+    </form>
+
+    <script>
+        function myFun() {
+            var a = document.getElementById("phone"). value;
+            if(a==""){
+                document.getElementById("message1").innerHTML = "Please enter the mobile number";
+                return false;
+            }
+            if(isNaN(a)){
+                document.getElementById("message1").innerHTML = "Please enter only number";
+                return false;
+            }
+            if(a.length<10){
+                document.getElementById("message1").innerHTML = "Mobile number should be only 10 digits";
+                return false;
+            }
+            if(a.length>10){
+                document.getElementById("message1").innerHTML = "Mobile number should be only 10 digits";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- 
+steps 
+sabse phle hame form use krna hota hai html me 
+uske baad input tag use krna hota hai but input tag me hame id deni hoti hai 
+uske baad hamee span tag use krna hota hai input tag k neche usko bhi id deni hoti hai 
+
+uske baad jaha form banaye hai html k isme waha java onsubmit return function_name add krna hai 
+ uske baad script tag banan hai script tag me function function_name use krna 
+ uske baad jo id use krni hai usko variable me store krna hai 
+ fr jo hame change krna hai usk innerHTML k through change kr skte hai -->

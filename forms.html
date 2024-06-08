@@ -10,7 +10,11 @@
 
         UserName: <input type="text" name="" id="user_name" value="">
         <span id="Message"></span>
-        <br> <br>
+        <br> 
+        <br><br>
+        LastName : <input type="text" name="" id="last_name">
+        <span id="Message1"></span><br><br>
+
         <input type="submit" name="" id="" value="Submit">
     </form>
 
@@ -18,13 +22,17 @@
         function myfun() {
         
         var a = document.getElementById("user_name"). value;
-         
+        var b = document.getElementById("last_name"). value;
         if(a==""){
             document.getElementById("Message").innerHTML = "Please full the username";
             return false;
         }
         if(a.length<3){
             document.getElementById("Message").innerHTML = "There should be minimun 3 character";
+            return false;
+        }
+        if(b==""){
+            document.getElementById("Message1").innerHTML = "Please fill the last name";
             return false;
         }
     }

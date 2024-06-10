@@ -1,0 +1,115 @@
+<!-- We are going to do nav bar in html css and js 
+for creating nav bar initaially we have to open a nav bar the all content will be inside the nav bar which you want to print 
+<nav>
+    <div class="logo"></div>
+    <ul>
+        <li>xyz</li>
+        <li>xyz</li>
+        <li>xyz</li>
+    </ul>
+
+    we do seperate the content of nav like ul and logo using flex properties on nav 
+    for seperating the content in nav we use this three properties
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+</nav>
+ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar in html</title>
+    <style>
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-left: 10%;
+            padding-right: 10%;
+
+        }
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+    </style>
+</head>
+<body>
+     <div class="hero">
+        <nav>
+            <div class="logo"><img src="cars.png" alt=""> </div> 
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+            <button>Subscribe</button>
+        </nav>
+     </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-left: 10%;
+            padding-right: 10%;
+            background-color: #e6e6e6;
+          
+        }
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        nav ul li a:hover{
+           /* border-bottom:2px solid grey ; */
+           border: 2px solid green;
+           padding: 5px;
+            border-radius:30px ;
+        }
+        #one{
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        #one:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <div class="logo">company Logo</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="#contactus">Contact us</a></li>
+                <li><a href="#vlogs">Vlogs</a></li>
+            </ul>
+            <button id="one">Subscribe</button>
+        </nav>
+    </div>
+</body>
+</html>

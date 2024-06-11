@@ -13,6 +13,7 @@
             padding-left: 10%;
             padding-right: 10%;
             background-color: #e0ac9d;
+            font-family: poppins;
         }
         nav li {
             display: inline-block;
@@ -24,9 +25,30 @@
             color: black;
         }
         nav li a:hover{
-            border: 2px solid green;
-            border-radius: 40px;
-            padding: 20px;
+            border-bottom: 2px solid green;
+           
+            
+        }
+        #one{
+            border: 1px solid wheat;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        #one:hover{
+            color: blueviolet;
+        }
+        ul li ul.dropdown li{
+            display: block;
+        }
+        ul li ul.dropdown{
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            display: none;
+
+        }
+        ul li:hover ul.dropdown{
+            display: block;
         }
     </style>
 </head>
@@ -35,12 +57,20 @@
         <nav>
             <h2 class="logo">Logo</h2>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">contact us</a></li>
-                <li><a href="">vlog</a></li>
+                <li><a href="">Home </a></li>
+                <li><a href="">Location </a>
+                <ul class="dropdown">
+                    <li><a href="">German</a></li>
+                    <li><a href="">Australia </a></li>
+                    <li><a href="">Japan</a></li>
+                    <li><a href="">Switzerland</a></li>
+                </ul>
+                </li>
+                <li><a href="">About us </a></li>
+                <li><a href="">connect us</a></li>
+             
             </ul>
-            <button>Subscribe</button>
+            <button id="one">Subscribe</button>
         </nav>
     </div>
 </body>

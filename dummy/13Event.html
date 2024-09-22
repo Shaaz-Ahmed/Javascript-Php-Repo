@@ -1,0 +1,35 @@
+<!-- if html code wants to interact with javascript so events handle this.
+on click hone k baad yeye dikhna chhaiye  
+Event are part of Document object model  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Shaaaaaz Mukadam </h1>
+   <button onclick="myfun()">Click me </button> <br>
+   <button onmousedown="myfun1()">Click me </button> <br>
+   <button onmouseenter="myfun2()">Click me </button> <br>
+   <button onmouseleave="myfun2()">Click me </button> <br>
+
+   <script>
+      function myfun() {
+        document.body.style.background = 'Blue';
+        document.body.style.color = 'black';
+      }
+      function myfun1() {
+        document.body.style.background = 'Red';
+        document.body.style.color = 'black';
+      }
+      function myfun2() {
+        document.body.style.background = 'purple';
+        document.body.style.color = 'black';
+      }
+   </script>
+</body>
+</html>

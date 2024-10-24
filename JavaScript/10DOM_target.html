@@ -1,0 +1,75 @@
+<!-- DOM Stands for Document Object Model. This is called tag<title></title> -->
+<!-- This is element<title>DOM</title> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JS</title>
+</head>
+<!-- how to target the DOM element 
+id document.getElementById(id);
+class name = document.getElementByClassName(name);
+tag name = document.getElementByTagName(name); -->
+<body>
+ <h1>Hello</h1>
+ <a>Hii</a>
+
+ <h4 id="one">Checking document by id </h4>
+ <h5 class="two">Check document by class</h5>
+    <script>
+        //document.title it will give the title .
+        var element;
+        element=document.title;
+        document.write(element); //This gives the title of html file 
+        document.write("<br>");
+
+        //document.body it will give the hole body content
+        element=document.body;
+        document.write(element);
+        document.write("<br>");
+
+        //document.links it will gives the link which are present in page
+        element=document.links
+        document.write(element);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("DOM OBJECT");
+        document.write("<br>");
+        document.write("<br>");
+
+
+        //document.image it gives the image which is present in page.
+
+        //document.forms it gives the form which is present in page.
+
+
+        //Document.url it gives the url of page
+
+        //document.domain it gives the doman name of page
+
+
+        //***************************DOM OBJECTS**********
+
+        //document.getElementById(id); this is used to target the elemt by id
+        var doc;
+        doc=document.getElementById("one");
+        document.write(doc);
+        document.write("<br>");
+
+        doc=document.getElementById("one");
+        document.write(doc);
+        document.write("<br>");
+
+        doc=document.getElementsByClassName("two");
+        document.write(doc);
+        document.write("<br>");
+
+        doc=document.getElementsByTagName("name");
+    </script>
+</body>
+</html>

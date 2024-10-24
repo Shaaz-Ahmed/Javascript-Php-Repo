@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox Validation</title>
+</head>
+<body>
+
+    <script>
+        function myFun(){
+        var a = document.forms.container;
+        for(i=0;i<a.length;i++){
+            if(a[i].checked==true)
+            return true;
+        }
+        document.getElementById("message").innerHTML="Please select one";
+        return false;
+    }
+    </script>
+
+    <h1 style="color:blueviolet; text-align: center;">CheckBox Validation</h1><br>
+
+    <form name="forms" onsubmit="return myFun()">
+    <input type="checkbox" name="container" value="LIKE">LIKE</input>
+    <input type="checkbox" name="container" value="SHARE">SHARE</input>
+    <input type="checkbox" name="container" value="SUBSCRIBE">SUBSCRIBE</input>
+    <div><p id="message"></p></div>
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>

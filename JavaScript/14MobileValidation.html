@@ -1,0 +1,51 @@
+<!-- Mobile Number Validation in js 
+1. Not should Empty
+2. Contain exact 10 digits
+3. Numbers only not alphabet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number Validation</title>
+</head>
+<body>
+ 
+    <script>
+        function myFun(){
+            var a = document.getElementById("mob_no").value;
+            if(a==""){
+                document.getElementById("message1").innerHTML="Please enter the mobile number";
+                return false;
+            }
+            if(isNaN(a)){
+                document.getElementById("message1").innerHTML="Only Digits is allowed";
+                return false; 
+            }
+            if(a.length>10){
+                document.getElementById("message1").innerHTML="You can enter mobile number upto 10 digits";
+                return false;
+            }
+            if(a.length<10){
+                document.getElementById("message1").innerHTML="Mobile Number should be 10 digit";
+                return false;
+            }
+            if((a.charAt(0)!=9) && (a.charAt(0)!=8) && (a.charAt(0)!=7) && (a.charAt(0)!=6) ) {
+                document.getElementById("message1").innerHTML="Invalid Number <br>Mobile number should start with 9 8 7 6";
+                return false;  
+            }
+        }
+    </script>
+
+    <h2 style="color:goldenrod; text-align: center;">Mobile number validation in JavaScript</h2>
+    
+    <form onsubmit="return myFun()">
+    <h3>Mobile Number</h3>
+    <input type="text" id="mob_no" value="">
+    <span id="message1"></span><br><br>
+    <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>

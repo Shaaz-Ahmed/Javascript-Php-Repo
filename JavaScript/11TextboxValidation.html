@@ -1,0 +1,45 @@
+<!-- Text box validation is used to give a validation on text box
+We will create 1 username text box and we should check 4 condition.
+1. Username should be greater than 3 letter 
+2. Username Should not be empty 
+3. Username should not be greater than 20 letters
+4.User can only enter the username in the capital or small alphabet  -->
+ <!-- span tag is used to show the content continues p tag break the line -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextBox Validation</title>
+</head>
+<body>
+
+    <script>
+        function myFun() {
+            var a = document.getElementById("User_name").value;
+            if(a==""){
+                document.getElementById("Message").innerHTML="Please enter the username";
+                return false;
+            }
+            if(a.length<3){
+                document.getElementById("Message").innerHTML="Username can contain min 4 character";
+                return false; 
+            }
+            if(a.length>20){
+                document.getElementById("Message").innerHTML="Username can contain max 20 character";
+                return false;    
+            }
+        }
+    </script>
+
+<form onsubmit="return myFun()">
+   
+    <h3>UserName</h3>
+    <input type="text" value="" id="User_name">
+    <span id="Message"></span>
+    <br><br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html> 

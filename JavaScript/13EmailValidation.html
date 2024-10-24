@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+
+    <script>
+        function myFun() {
+            var a = document.getElementById("email1").value;
+            if(a==""){
+                document.getElementById("message1").innerHTML="Please enter mail";
+                return false;
+            }
+            if(a.indexOf('@')<=0){
+            document.getElementById("message1").innerHTML="invalid email";
+            return false;
+            }
+        }
+    </script>
+
+    <form onsubmit="return myFun()">
+    <h3>Email</h3>
+    <input type="text" id="email1" value="">
+    <span id="message1"></span><br><br>
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>

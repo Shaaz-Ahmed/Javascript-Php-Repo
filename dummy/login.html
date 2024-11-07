@@ -1,0 +1,153 @@
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="logo/favicon.png"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    body{
+      background-image: url(loginimg2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #000000;
+    }
+  .one{
+    max-height: 100%;
+  }
+  .login-logo{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 55px;
+    font-weight: 300;
+    color: white;
+  }
+
+  .A1{
+	  background-color:#000000;
+  }
+  .login-form{
+    margin-left: 850px;
+    margin-top: 0px;
+    max-width: 35%;
+    }
+  .with-border{
+    border-bottom: 2px solid #000000;
+  }
+  .login-form form{
+    /* background-color: #fff; */
+  	max-width: 600px;
+   	margin: auto;
+	  padding: 20px ;
+   	border-radius: 10px;
+    height: 100%;
+
+  } 
+  .login-form .item{
+	  border-radius: 1vw;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+	
+  }
+
+  .login-form .login-button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-bottom:10px;
+    /* background-color:aquamarine; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,148,84,0.8580474426098564) 0%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  .login-button,.login-button:active,.login-button:focus {
+    background: red;
+  }
+  .F1{
+        padding-top:30px;
+      }
+  .two{
+        margin-left: 20px;
+        color: white;
+      }
+  .three{
+          margin-top: 20px;
+          color: white;
+        }
+  .four a{
+            color: white;
+        }
+  .error{
+    color:red;
+  }
+  .login-logo with-border{
+    margin-top: 50px;
+  }
+</style>
+<script>
+
+/*$(document).ready(function() {
+ 
+  $('#form').submit(function(e) {
+    e.preventDefault();
+    var username = $('#username').val();
+    
+    var password = $('#password').val();
+ 
+    $(".error").remove();
+ 
+    if (username.length < 1) {
+      $('#username').after('<span class="error">This field is required</span>');
+    }
+   
+    
+    if (password.length < 8) {
+      $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+    }
+  });
+ 
+});*/
+</script>
+	</head>
+	<body>
+    
+    <div class="one">
+        <div class="login-form">
+			    <form action="login.php" method="POST" name="loginform">
+				<div class="login-logo with-border">
+					<h1><b>Login</b></h1>
+				</div>
+				<div class="form-group">
+					<input type="email" name="email" class="form-control item" id="username" placeholder="Username / Email / Mobile no." >
+				</div>
+				<div class="form-group">
+					<input type="password" name="password" class="form-control item" id="password" placeholder="Password" >
+				</div>
+          <!--  <div class="two">
+           <input type="checkbox" id="remember" name="remember" value="me">
+          <label for="remember">Remember me</label><br>
+        </div> -->
+        <div class="three">
+				<div class="row">
+					<div class="col">
+						<button type="submit" class="btn btn-block login-button">Login</button>
+					</div>
+				</div>
+        three is thew Name
+		</div>
+    <div class="three">
+      <p>Dont't have an account? <a href="Reg1.html">Sign Up</a> </p>
+      <p class="four">  <a href="">Forgot password</a>  </p>
+    </div>
+			</form> 
+          </div>
+          </div>
+	</body>
+</html>

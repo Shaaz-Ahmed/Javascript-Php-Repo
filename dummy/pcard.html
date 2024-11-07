@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/icon" href="logo/favicon1.png" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+        body {
+            /* background-color: #000000; */
+            /* background-color: red; */
+            background: #7386D5;
+        }
+        #bbb{
+            border: 2px solid black;
+        }
+        .registration-logo {
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+        
+        .registration-form {
+            padding: 50px 10px;
+        }
+        
+        .with-border {
+            border-bottom: 2px solid #f4f4f4;
+        }
+        
+        .registration-form form {
+            background-color: #FFF;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 30px;
+        }
+        
+        .registration-form .item {
+            border-radius: 10px;
+            margin-bottom: 25px;
+            padding: 10px 20px;
+        }
+        
+        .registration-form .login-button {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            border-radius: 10px;
+            background: #363636;
+            width: 100%;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+        
+        .login-button:hover,
+        .login-button:active,
+        .login-button:focus {
+            background: #00001a;
+        }
+        
+        .two2 {
+            font-size: 20px;
+        }
+        
+        #A3 {
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 576px) {
+            .login-form form,
+            .registration-form form {
+                padding: 50px 20px;
+            }
+        }
+        
+        [type=file] {
+            position: absolute;
+            filter: alpha(opacity=0);
+            opacity: 0;
+        }
+        
+        input,
+        [type=file]+label {
+            border-radius: 10px;
+            margin-bottom: 25px;
+            padding: 10px 20px;
+            display: block;
+            border: 1px solid #ced4da;
+            text-align: left;
+            width: 100%;
+            background-clip: padding-box;
+            position: relative;
+        }
+        
+        [type=file]+label {
+            text-align: left;
+            width: 100%;
+            background-color: #fff;
+            background-clip: padding-box;
+            color: #495057;
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        
+        [type=file]+label:hover {
+            background: #3399ff;
+        }
+        
+        .two3 {
+            margin-left: 300px;
+        }
+        
+        .two3 a {
+            color: #000000;
+        }
+        
+        #abc {
+            margin-left: 20px;
+        }
+        
+        #abc1 {
+            color: white;
+        }
+        #title{
+           border: none;
+           border-bottom: #000000;
+        }
+        #titlee{
+            font-weight: bold;
+        }
+        #details{
+            border: none;
+        }
+        #ccc{
+            margin-top: -40px;
+            height: 500px;
+        }
+        #form1{
+            width: 400px;
+            /* height: 400px; */
+        }
+    </style>
+</head>
+
+<body class="bg-img" id="">
+    <h3 id="abc1">Contribute.io</h3>
+    <div class="registration-form" id="ccc">
+        <div class="container">
+            <form action="cardinfo.php" method="POST" id="form1">
+                <!-- <form action="connect.php" class="A1" id="form1"> -->
+                <div class="registration-logo with-border">
+                    <h1><b></b></h1>
+                </div>
+                <p class="two2"></p>
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <p id="titlee">Title</p>
+                            <input type="text" id="title" name="title" class="form-control item" placeholder="Enter the title of project" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- <input type="text" id="lname" name="lname" class="form-control item" placeholder="Last name" required>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="form-group">
+                        <p id="details">Details</p>
+                        <input type="text" id="title" name="details" class="form-control item" placeholder="Enter the Details of project" required>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="form-group">
+                        <p id="reference">Any Reference</p>
+                        <input type="text" id="title" name="reference" class="form-control item" placeholder="Upload Videos or any reference" required>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-10">
+                    <div class="form-group">
+                        <p id="resume">Linkdein profile link</p>
+                        <input type="text" id="title" name="link" class="form-control item" placeholder="Upload Videos or any reference" required>
+                    </div>
+                    
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-block login-button">Upload</button>
+                </div>
+
+            
+                <!-- <div class="row">
+                    <div class="col-sm-11">
+                        <div>
+                            <p id="detail">Details</p>
+                            <input type="text" id="details" name="details" class="form-control item" placeholder="Enter the details" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div> -->
+                            <!-- <input type="vemail" id="vemail" name="vemail" class="form-control item" placeholder="Verify  Email" required>
+                        </div> -->
+                    <!-- </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div>
+                            <input type="mob" id="mob" name="mob" class="form-control item" placeholder="Enter Mobile" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <input type="tel" id="vmob" name="vmob" class="form-control item" placeholder="Verify Mobile" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" id="npass" name="npass" class="form-control item" placeholder="Create Password" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" id="cpass" name="cpass" class="form-control item" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                </div>
+ -->
+                <!-- <div class="row">
+
+                    <div class="form-group">
+                        <a href="login.html" class="text-center"><span id="abc">I already have a Register</a></span> <span class="two3"><a href="Reg2.html"><b>Next --></b></a></span>
+                    <!-- </div>  -->
+                    <!-- <input type="submit" class="btn btn-primary" /> -->
+            </form>
+            </div>
+
+
+
+            <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript">
+            $("[type=file]").on("change", function() {
+                var file = this.files[0].name;
+                var dflt = $(this).attr("placeholder");
+                if ($(this).val() != "") {
+                    $(this).next().text(file);
+                } else {
+                    $(this).next().text(dflt);
+                }
+            });
+        </script>
+
+</body>
+
+</html>
